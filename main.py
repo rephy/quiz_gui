@@ -16,9 +16,6 @@ name = easygui.enterbox("What is your name?", title="Your Name")
 try:
     scores_file = open("scores.json", "r")
 except FileNotFoundError:
-    scores_file = open("scores.json", "r")
-    scores_file.close()
-
     scores_file = open("scores.json", "w")
     scores_file.write("{}")
     scores_file.close()
